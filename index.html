@@ -1189,7 +1189,23 @@ kamu jadi tahu kalau kamu itu spesial. ❤️`;
        /* =========================
    GAME SEBERAPA COCOK KITA
 ========================= */
+/* MULAI GAME */
 
+function startGame() {
+
+    currentQuestion = 0;
+    totalScore = 0;
+    selectedAnswer = null;
+
+    document.getElementById("gameStart").style.display = "none";
+
+    document.getElementById("gameQuestion").style.display = "block";
+
+    document.getElementById("gameResult").style.display = "none";
+
+    showQuestion();
+
+}
 const questions = [
 
     {
@@ -1272,23 +1288,7 @@ const myAnswers = [
 ];
 
 
-/* MULAI GAME */
 
-function startGame() {
-
-    currentQuestion = 0;
-    totalScore = 0;
-    selectedAnswer = null;
-
-    document.getElementById("gameStart").style.display = "none";
-
-    document.getElementById("gameQuestion").style.display = "block";
-
-    document.getElementById("gameResult").style.display = "none";
-
-    showQuestion();
-
-}
 
 
 /* TAMPILKAN PERTANYAAN */
